@@ -36,6 +36,7 @@ function Login() {
                 redirect: false,
             });
             if (data.error) {
+                alert("Nhập sai Tài khoản hoặc Mật khẩu !!!");
                 setLoading(false);
                 return;
             } else {
