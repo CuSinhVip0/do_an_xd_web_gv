@@ -67,7 +67,6 @@ function AddMark() {
                                 type="file"
                                 className={"hidden"}
                                 onChange={(e) => {
-                                    console.log(e.target.files);
                                     try {
                                         const file = e.target.files[0];
                                         if (

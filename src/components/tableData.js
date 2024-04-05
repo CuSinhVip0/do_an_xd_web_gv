@@ -24,6 +24,9 @@ export const Table = (
         return setListCheck(a);
     };
     useEffect(() => {
+        setData(props.data);
+    }, [props.data]);
+    useEffect(() => {
         setShow(data.slice(0, props.step));
         setIndex(1);
         setLengthShow(data.length);
@@ -84,11 +87,11 @@ export const Table = (
                 props.setClear();
                 setListCheck([]);
                 setDataEdit([]);
-                alert("Update score success");
+                alert("Cập nhật điểm thành công");
                 setLoading(false);
                 return;
             } else {
-                alert("Update score fail");
+                alert("Cập nhật điểm không thành công");
                 setLoading(false);
                 return;
             }
@@ -325,7 +328,7 @@ export const Table = (
                                                                 [x[0]]: e.target.innerText,
                                                             });
                                                         } else {
-                                                            alert("Không điểm sai!!!");
+                                                            alert("Không đúng khoảng điểm!!!");
                                                             e.target.innerText = "";
                                                             setDataUpdate({
                                                                 ...dataUpdate,

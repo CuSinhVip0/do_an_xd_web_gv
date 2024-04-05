@@ -31,7 +31,7 @@ function AllSubject() {
             };
             responce();
         } catch (error) {
-            Alerterror("Xảy ra lỗi, liên hệ Nguyễn Khắc thể để fix bug !!!");
+            Alerterror("Xảy ra lỗi, liên hệ Nguyễn Khắc Thế để fix bug !!!");
             setLoading(false);
         }
     }, []);
